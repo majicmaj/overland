@@ -12,7 +12,7 @@ public class ThirdPersonMovement : MonoBehaviour
     void Update()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
-        float veritcal = Input.GetAxisRaw("Verticle");
+        float verticle = Input.GetAxisRaw("Verticle");
         Vector3 direction = new Vector3(horizontal, 0f, verticle).normalized;
 
         if (direction.magnitude >= 0.1f)
